@@ -28,7 +28,7 @@ const LeaguesPage = () => {
     const [currentLeague, setCurrentLeague] = useState({ id: null, name: '', location: '' });
 
     const fetchLeagues = async () => {
-        const response = await axios.get('http://localhost:9090/back2/api/leagues');
+        const response = await axios.get('http://localhost:8081/back2/api/leagues');
         setLeagues(response.data);
     };
 
