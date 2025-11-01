@@ -27,7 +27,7 @@ const LoginPage = () => {
     try {
       if (isSignUp) {
         // Use provided backend contract: POST /users/insert returns "200::<msg>" on success
-        const signupResp = await fetch("http://localhost:8081/back2/users/insert", {
+        const signupResp = await fetch("http://localhost:8081/users/insert", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
