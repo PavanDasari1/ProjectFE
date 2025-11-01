@@ -20,7 +20,7 @@ const DashboardPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/api/matches');
+                const response = await axios.get('http://localhost:8081/api/matches');
                 setLiveScores(response.data); // Assuming live matches are part of the response
                 setUpcomingMatches(response.data); // Assuming upcoming matches are part of the response
             } catch (error) {
